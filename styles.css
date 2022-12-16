@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #000000;
+    --dark-grey: #292929;
+    --yellow-primary: #FECB00;
+    --yellow-accent: #FFD535;
+    --white: #FFFFFF;
+
+}
+
+body {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--black);
+}
+
+
+
+
+/* Nav Bar */
+.navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    background-color: var(--dark-grey);
+    overflow: hidden;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    padding-right: 3rem;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: var(--yellow-primary);
+    text-align: center;
+    padding: 15px 18px;
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+.navbar a:hover {
+    color: var(--white);
+}
+
+.banana-icon {
+    height: 2rem;
+    width: 100%
+}
+
+.title {
+    color: var(--white);
+    padding-right: 3rem;
+}
+
+/* Buttons */
+
+.btn {
+    padding: 1rem;
+    border-radius: 10rem;
+    border-style: none;
+    box-shadow: 3px;
+    font-weight: 700;
+    font-size: 2.5vw;
+}
+
+.btn-primary {
+    background-color: var(--yellow-accent);
+    color: var(--black);
+}
+
+.btn-accent {
+    background-color: var(--dark-grey);
+    color: var(--yellow-accent);
+}
+
+.btn:hover {
+    opacity: 50%;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+/* Container */
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+.log-line {
+    color: var(--yellow-accent);
+    font-size: 7vw;
+}
+
+.sub-title {
+    color: var(--white);
+    font-size: 3vw;
+}
+
+.cta-buttons {
+    display: flex;
+    padding: 2rem;
+}
+
+.main-btn {
+    margin-right: 3rem;
+}
+
+.banana-main {
+    width: 40vw;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 70px;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .cta-buttons {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        width: 60vw;
+    }
+
+    .main-btn {
+        margin: 0;
+    }
+}
